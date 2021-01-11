@@ -6,16 +6,22 @@
 # For this function, the first two fibonacci numbers are 1 and 1
 
 def fib(n):
-    # Write code here
-    pass
+    if n < 0:
+        return 0
+    elif n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
 
-# print(fib(-1))
+print(fib(-1))
 # => 0
-# print(fib(0))
+print(fib(0))
 # => 0
-# print(fib(1))
+print(fib(1))
 # => 1
-# print(fib(2))
+print(fib(2))
 # => 1
-# print(fib(7))
+print(fib(7))
 # => 13
